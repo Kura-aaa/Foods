@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kan'anan</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Hamburger Icon (Right Side) -->
+  <div class="hamburger" id="hamburger">&#9776;</div>
+
+  <!-- Side Navigation Menu -->
+  <nav class="side-nav" id="sideNav">
+    <ul>
+      <li><a href="#home" class="menu-item">Home</a></li>
+      <li><a href="#about" class="menu-item">About</a></li>
+      <!-- "Menu" scrolls to Featured Posts section -->
+      <li><a href="#featured" class="menu-item">Menu</a></li>
+      <li><a href="#contact" class="menu-item">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section with Background Image & Animation -->
+  <header class="hero" id="home">
+    <div class="hero-overlay">
+      <h1 class="focus-in-contract-bck">Welcome to Kan'anan sa Gwapo</h1>
+      <p class="focus-in-contract-bck">"Where every meal is a celebration of flavor!"</p>
+    </div>
+  </header>
+
+  <!-- Featured Posts Section -->
+  <section class="featured-posts" id="featured">
+    <div class="container">
+      <h2 id="featured-heading">Pili lang Gwapoug ug Gwapa !</h2>
+      <div class="post-grid">
+        <article class="post-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLIyvWJLowr5q0qlh4c-qn0u_M2jnudfslIQ&s" alt="shrimp">
+          <div class="post-content">
+            <h3>Pasayan</h3>
+            <p>Pasayan sa mga gwapa ni!</p>
+          </div>
+        </article>
+        <article class="post-card">
+          <img src="https://www.allrecipes.com/thmb/ndOxfSY8xgiuTmuoHbunghG88AA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/35151-traditional-filipino-lumpia-ddmfs-hero-3x4-0744-6a66461864c9437da74828a882f2c42a.jpg" alt="lumpia">
+          <div class="post-content">
+            <h3>Lumpia</h3>
+            <p>Lumpia sa mga gwapo!</p>
+          </div>
+        </article>
+        <article class="post-card">
+          <img src="https://www.jocooks.com/wp-content/uploads/2020/07/chicken-cordon-bleu-1-2-1-730x913.jpg" alt="chicken gordon">
+          <div class="post-content">
+            <h3>Chicken Gordon</h3>
+            <p>Chicken Gordon sa mga gwapo gihapon!</p>
+          </div>
+        </article>
+        <article class="post-card">
+          <img src="https://panlasangpinoy.com/wp-content/uploads/2021/12/Pancit-Canton-at-Sotanghon.jpg" alt="bam e">
+          <div class="post-content">
+            <h3>Bam E!</h3>
+            <p>Bam E para mo taas kinabuhi sa gwapo!</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="slide-top">Ila-ila Ta !</h2>
+      <div class="about-content">
+        <img src="https://static.wikia.nocookie.net/recipes/images/7/73/BoyLogro.jpg/revision/latest?cb=20180831104618" alt="Chef cooking">
+        <div class="about-text">
+          <p>
+            Welcome to Kan'anan sa mga gwapo, kung mo kaon ka ari kay mo gwapo ka hantod sa hantod. 
+            Ang tumong aning businessa kay para mo hitsuraan ta kanunay, total rejuv ig human kaon. 
+            Maong kaon nata bai!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-card">
+        <div class="contact-grid">
+          <!-- Row 1 -->
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <!-- Row 2 -->
+          <div class="form-group">
+            <label for="payment">Payment:</label>
+            <select id="payment" name="payment" required>
+              <option value="COD">COD</option>
+              <option value="GCASH/PAYMAYA">GCASH/PAYMAYA</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required>
+          </div>
+          <div class="form-group">
+            <label for="time">Time:</label>
+            <input type="text" id="time" name="time" required>
+          </div>
+          <!-- Row 3: Submit Button (Centered) -->
+          <div class="form-group submit-group">
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 3.14 Kan'anan sa Gwapo.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
